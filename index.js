@@ -22,6 +22,7 @@ function setTimer(targetDate) {
   setInterval(() => {
     const currentDate = Date.now();
     const time = targetDate - currentDate;
+    console.log(time);
 
     const days = pad(Math.floor(time / (1000 * 60 * 60 * 24)));
     const hours = pad(
